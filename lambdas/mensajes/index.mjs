@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'; // 👈 importar mongoose directo
 import Message from './models/messageModel.mjs'; // tu modelo de mensajes
 
+
 export const handler = async (event) => {
   // Conexión directa aquí
   await mongoose.connect(process.env.MONGO_URI);
